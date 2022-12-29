@@ -257,6 +257,7 @@ if __name__ == '__main__':
 
     win = QTagBar()
     win.adding.connect(lambda x: print(x))
+    win.clicked.connect(lambda x: print(x))
     win.deleting.connect(lambda x: print(x))
     win.addItems(["1234", "4321"])
     win.addItem("43210")

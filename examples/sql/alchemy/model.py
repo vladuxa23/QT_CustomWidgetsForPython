@@ -104,4 +104,4 @@ init_db()
 
 if __name__ == '__main__':
     # print(getNames())
-    getUser("Наина", "Сысоева")
+    print(getUser("Наина", "Сысоева"))

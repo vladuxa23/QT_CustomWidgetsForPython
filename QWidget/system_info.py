@@ -48,3 +48,14 @@ class SystemWidget(QtWidgets.QWidget):
         """
 
         self.system_label.setText(text)
+
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication()
+
+    win = SystemWidget()
+    win.setValue(23)
+    win.setText("Текст")
+    win. show()
+
+    app.exec()

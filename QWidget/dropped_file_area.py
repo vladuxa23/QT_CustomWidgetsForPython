@@ -242,8 +242,8 @@ if __name__ == '__main__':
         app = QtWidgets.QApplication()
 
         win = QDroppedFileArea()
-        win.addItem("1234")
-        win.addItems(['123', '321'])
+        # win.addItem("1234")
+        # win.addItems(['123', '321'])
         win.adding.connect(lambda x: print(time.ctime(), x))
         win.renaming.connect(lambda x: print(time.ctime(), x))
         win.downloading.connect(lambda x: print(time.ctime(), x))

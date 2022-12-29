@@ -10,7 +10,7 @@ class Window(QtWidgets.QWidget):
         super().__init__(parent)
 
         self.data = data
-        self.current_slice: QtCharts.QPieSlice = None
+        self.current_slice: tuple = None
 
         self.initChart()
         self.initUi()

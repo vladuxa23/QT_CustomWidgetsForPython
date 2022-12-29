@@ -2,6 +2,7 @@ import sys
 
 from PySide6 import QtWidgets, QtCore, QtSql
 
+from QSqlTableModel.custom import EditableSQLModel
 from QStyledItemDelegate.no_edit import NoEditDelegate
 from form import Ui_Form
 
@@ -56,8 +57,8 @@ class Window(QtWidgets.QWidget):
         db.setDatabaseName('fieldlist.db')
 
         # Создаём модель (можно использовать кастомную)
-        # self.model = EditableSQLModel()
-        self.model = QtSql.QSqlTableModel()
+        self.model = EditableSQLModel()
+        # self.model = QtSql.QSqlTableModel()
         self.model.setTable('field')
 
         self.model.select()

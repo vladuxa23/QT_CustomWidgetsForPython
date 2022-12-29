@@ -90,6 +90,7 @@ if __name__ == '__main__':
             timer.timeout.connect(self.setPBValue)
 
             self.button = QCircularWidget()
+            self.button.ui.labelTitle.setText("Выполнить")
             self.button.clicked.connect(timer.start)
 
             layout = QtWidgets.QVBoxLayout()

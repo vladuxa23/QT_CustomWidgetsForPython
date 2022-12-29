@@ -76,7 +76,8 @@ class Widget(QtWidgets.QWidget):
             "layout": {"title": {"text": "A Figure Specified By Python Dictionary"}}
         })
 
-        self.canvas.setHtml(pio.to_html(fig, include_plotlyjs='cdn'))
+        data = pio.to_html(fig, include_plotlyjs='cdn')
+        self.canvas.setHtml(data)
         # pio.show(fig)
 
     def show_graph1(self) -> None:
