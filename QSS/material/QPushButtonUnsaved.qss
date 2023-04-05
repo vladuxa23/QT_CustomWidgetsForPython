@@ -1,0 +1,50 @@
+* {
+    outline: none; /* Remove the dotted line when there is focus */
+}
+
+QPushButton {
+    border: 1px solid #ffac00; /* QPushButton border width, style and color */
+    border-radius: 3px; /* Border rounded corners */
+    background-color: #F2F2F2; /* background color */
+    color: #e01313; /* text color */
+    font-family: "Microsoft YaHei"; /* Text font family */
+    font-size: 10pt; /* Text font size */
+}
+
+QPushButton:hover { /* The state of the mouse hovering over the QPushButton */
+    background-color: #ffe702;
+    color: #e01313;
+}
+
+QPushButton:checked { /* The state of QPushButton when selected */
+    border: 1px solid #FF5242;
+    background-color: #F2F2F2;
+    color: #FF5242;
+}
+
+QPushButton:pressed { /* The state when the mouse is pressed on the QPushButton */
+    background-color: #ffb400;
+}
+
+QPushButton:checked:pressed { /* The state when QPushButton is selectable and the mouse is pressed on QPushButton */
+    background-color: #F2F2F2;
+}
+
+QPushButton:disabled { /* The state of QPushButton when it is disabled */
+    border: 1px solid #CDCDCD;
+    background-color: #CDCDCD;
+    color: #B4B4B4;
+}
+
+QPushButton:menu-indicator { /* Menu indicator when QPushButton with menu */
+    /*subcontrol-origin：padding; !* The starting point of the menu indicator *!*/
+    subcontrol-position: center right; /* The position of the menu indicator is horizontally to the right and vertically centered */
+    image: url(:/Resource/down_arrow_normal); /* Image of menu indicator */
+}
+
+QPushButton:menu-indicator:hover, QPushButton:menu-indicator:open { /* The mouse hovering over the menu indicator and the status when the menu indicator is enabled */
+    position: relative;
+    top: 2px;
+    left: 2px;
+    image: url(:/Resource/down_arrow_hover);
+}

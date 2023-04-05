@@ -44,6 +44,19 @@ class CustomModel(QtGui.QStandardItemModel):
 
         return QtGui.QStandardItemModel.data(self, index, role)
 
+    def getColumnNumberByName(self, column_name: str) -> int:
+        """
+        Метод возвращает номер столбца по его имени
+
+        :param column_name: название столбца
+        :return: номер столбца
+        """
+
+        for i in range(1, self.columnCount()):  # отсчёт с 1, т.к. 0 столбец это id и он не показывается
+            if column_name == self.headerData(i, QtCore.Qt.Horizontal):
+                return i
+
+
 
 class DemoWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
