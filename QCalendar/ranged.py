@@ -65,6 +65,8 @@ class RangedCalendar(QtWidgets.QCalendarWidget):
             self.fromDate = dateValue
             self.toDate = None
 
+        print(self.fromDate, self.toDate)
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication()

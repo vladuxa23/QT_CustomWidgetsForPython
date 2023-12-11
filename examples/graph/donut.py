@@ -1,5 +1,3 @@
-# Переделать
-
 import sys
 from PySide6.QtCore import Qt, Slot
 from PySide6.QtGui import QColor, QFont, QPainter, QScreen

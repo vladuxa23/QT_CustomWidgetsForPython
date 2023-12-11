@@ -11,4 +11,4 @@ class NoEditDelegate(QtWidgets.QStyledItemDelegate):
             option: QtWidgets.QStyleOptionViewItem,
             index: QtCore.QModelIndex
     ) -> QtWidgets.QWidget:
-        return 0
+        return None

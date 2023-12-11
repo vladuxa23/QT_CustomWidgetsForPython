@@ -9,7 +9,8 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication()
 
     win = WidgetGallery()
-    win.setStyleSheet(load_style("DarkStyle2Theme.qss"))
+    win.setStyleSheet(load_style('dark_flat.qss'))
+    # win.setStyleSheet(load_style("DarkStyle2Theme.qss"))
     # win.setStyleSheet(load_style("DarkStyleTheme.qss"))
     # win.setStyleSheet(load_style("MumbleDarkOSXTheme.qss"))
     # win.setStyleSheet(load_style("MumbleDarkTheme.qss"))
