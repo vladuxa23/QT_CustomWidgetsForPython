@@ -53,6 +53,6 @@ class QPushButtonPrev(QtWidgets.QPushButton):
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication()
-    w = QPushButtonAdd()
+    w = QPushButtonDel()
     w.show()
     app.exec()

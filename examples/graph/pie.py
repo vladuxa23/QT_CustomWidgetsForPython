@@ -83,7 +83,7 @@ class Window(QtWidgets.QWidget):
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
 
-    labels = ["Апельсины", "Мандарины", "Шоколад", "Мармелад"]
+    labels = ["Апельсины", "Мандарины", "Шоколад", "Мармелад", "Колбаса"]
     data = [(labels[i], random.randint(100, 400)) for i in range(len(labels))]
 
     window = Window(data)

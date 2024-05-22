@@ -1,0 +1,1 @@
+nuitka --standalone --plugin-enable=pyside6 Paint.py

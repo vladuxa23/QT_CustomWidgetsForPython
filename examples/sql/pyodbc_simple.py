@@ -75,6 +75,11 @@ class Window(QtWidgets.QWidget):
         :return: None
         """
 
+        server = 'tcp:vpngw.avalon.ru'
+        database = 'AdventureWorks'
+        username = 'tsqllogin'
+        password = 'Pa$$w0rd'
+
         self.conn = pyodbc.connect(
             'DRIVER={SQL Server};SERVER=' + server + ';DATABASE=' + database + ';UID=' + username + ';PWD=' + password)
 

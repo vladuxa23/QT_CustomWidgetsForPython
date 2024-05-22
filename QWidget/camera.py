@@ -30,7 +30,7 @@ class Camera(QtWidgets.QWidget):
             self._camera.start()
         else:
             self.setWindowTitle("PySide6 Camera Example")
-            self._take_picture_action.setEnabled(False)
+            # self._take_picture_action.setEnabled(False)
 
         layout = QtWidgets.QVBoxLayout()
         layout.addWidget(self._camera_viewfinder)

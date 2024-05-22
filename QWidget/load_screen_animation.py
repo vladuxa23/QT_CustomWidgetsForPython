@@ -5,12 +5,12 @@ class LoadScreen(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super(LoadScreen, self).__init__(parent)
 
-        self.setFixedSize(200, 200)
+        self.setFixedSize(640, 640)
         self.setWindowFlag(QtCore.Qt.WindowType.WindowStaysOnTopHint | QtCore.Qt.WindowType.CustomizeWindowHint)
 
         self.labelAnimation = QtWidgets.QLabel(self)
 
-        self.movie = QtGui.QMovie("ui/loading_5.gif")
+        self.movie = QtGui.QMovie("ui/loading_2.gif")
 
         self.labelAnimation.setMovie(self.movie)
 

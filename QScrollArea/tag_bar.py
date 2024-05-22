@@ -59,7 +59,7 @@ class QTagBar(QtWidgets.QScrollArea):
         :return: True | False
         """
 
-        if watched.objectName() == 'input_combobox' and event.type() == QtCore.QEvent.Type.KeyPress:
+        if watched.objectName() == 'input_combobox' and isinstance(event, QtGui.QKeyEvent):
             if event.key() == 16777220:  # Нажатие на Enter
                 self.__addNewItem()
 
